@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="carousel_1" data-name="carousel 1" transform="translate(-916 -931)">
+    <circle id="Ellipse_46" data-name="Ellipse 46" cx="12" cy="12" r="12" transform="translate(940 955) rotate(180)" fill="#3a4a79"/>
+    <g id="right-arrow" transform="translate(825.172 940)">
+      <g id="Group_8" data-name="Group 8" transform="translate(101.478)">
+        <path id="Path_57" data-name="Path 57" d="M105.479,3.227,102.364.112a.384.384,0,0,0-.542,0l-.229.229a.383.383,0,0,0,0,.542L104.209,3.5,101.59,6.117a.384.384,0,0,0,0,.542l.229.229a.384.384,0,0,0,.542,0l3.118-3.118a.386.386,0,0,0,0-.543Z" transform="translate(-101.478)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

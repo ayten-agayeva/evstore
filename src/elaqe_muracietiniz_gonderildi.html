@@ -1,0 +1,51 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Əlaqə</span></a>
+			<span itemprop="position" content="3"></span>
+		</li>
+	</ol>
+</div>
+<div class="container contact_page">
+	<h2 class="page_title">Əlaqə</h2>
+	<div class="row">
+		<div class="col-md-4">
+            <div class="appeal">
+                <img src="images/accept.svg" />
+                <span>Müraciətiniz göndərildi. Təşəkkür edirik.</span>
+                <a href="404.html" class="close">BAĞLA</a>
+            </div>
+		</div>
+		<div class="col-md-8">
+			<div class="contact_detail">
+				<h2>Əlaqə məlumatları</h2>
+				<div class="detail_row">
+					<span><b>Ünvan 1:</b> Nizami rayonu, Süleyman Əhmədov 19,
+						28 Mall-un yanı, Bakı</span>
+					<span><b>Nömrə:</b> (012) 444 22 33</span>
+				</div>
+				<div class="detail_row">
+					<span><b>Ünvan 1:</b> Nizami rayonu, Süleyman Əhmədov 19,
+						28 Mall-un yanı, Bakı</span>
+					<span><b>Nömrə:</b> (012) 444 22 33</span>
+				</div>
+				<div class="detail_row">
+					<span><b>Ünvan 1:</b> Nizami rayonu, Süleyman Əhmədov 19,
+						28 Mall-un yanı, Bakı</span>
+					<span><b>Nömrə:</b> (012) 444 22 33</span>
+                </div>
+                <div class="detail_row">
+					<span><b>Email:</b> info@evstore.az</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,174 @@
+.profile_details { 
+    .profile_details_bg {
+        background-color: #fff;
+        padding: 0 27px;
+        border-radius: 5px;
+        .detail_link {
+            display: flex;
+            color: #8d9da7;
+            font-size: 14px;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 1px solid #EEEEEE;
+            padding: 15px 0;
+            text-decoration: none;
+            &:last-child {
+                border-bottom: none;
+            }
+            >*{
+							display: flex;
+							align-items: center;
+                &:nth-child(2) {
+                    color: #3A4A79;
+                    font-weight: 700;
+                    
+                }
+							&.active{
+								color: #C5C5C5;
+							}
+            }
+        }
+    }
+    .edit_pencil {
+				&:before{
+					content: "";
+					display: inline-flex;
+					width: 14px;
+					height: 13px;
+					margin-right: 6px;
+					-webkit-mask: url('../images/pencil-edit-button.svg') center no-repeat;
+					mask: url('../images/pencil-edit-button.svg') center no-repeat;
+					background-color: #3A4A79;
+				}
+			&.active:before{
+				background-color: #C5C5C5;
+			}
+    }
+    .text-right {
+        display: flex;
+        justify-content: flex-end;
+        .edit_btn {
+            height: 40px;
+            padding: 0 20px;
+            background-color: #3A4A79;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            font-weight: 700;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-bottom: 37px;
+						margin-top: 15px;
+						&:before{
+							background-color: #fff;
+						}
+						&.active{
+							background-color: #C5C5C5;
+						}
+          }
+    }
+    #edit_form, #change_password {
+        display: none; 
+        transition:opacity .6s cubic-bezier(.4,0,.2,1);
+        &.show {
+            display: block;
+        }
+    }
+	.form form{
+		padding-bottom: 0;
+	}
+}
+.forget_password {
+    max-width: 370px;
+    margin: auto;
+    form {
+        .text {
+            display: block;
+            padding-bottom: 15px;
+        }
+    }
+}
+.appeal_wrap {
+    width: 370px;
+    margin: auto;
+}
+.appeal {
+    background-color: #21C28B;
+    color: #fff;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 25px;
+    margin-bottom: 30px;
+    img {
+        width: 76px;
+    }
+    span {
+        font-size: 18px;
+        width: 190px;
+        text-align: center;
+        padding: 20px 0 30px 0;
+    }
+    .close {
+        color: #fff;
+        font-weight: 700;
+        font-size: 16px
+    }
+}
+.contact_page {
+	@media (max-width: 991px) {
+		>.row{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+    .contact_detail {
+        background-color: #fff;
+        border-radius: 5px;
+        padding: 27px 30px 0;
+        h2 {
+            padding-bottom: 25px;
+            text-align: center;
+        }
+        .detail_row {
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            border-top: 1px solid #eee;
+            @media only screen and (max-width: 760px) {
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+                span {
+                    &:first-child{
+                        padding-bottom: 10px;
+                    }
+                }
+            }
+            span {
+                font-size: 16px;
+                b {
+                    color: #3A4A79;
+                }
+                &:first-child {
+                    max-width: 340px;
+									@media (min-width: 992px) {
+										margin-right: 53px;
+									}
+                }
+            }
+        }
+			@media (max-width: 991px) {
+				margin-bottom: 30px;
+			}
+    }
+    .appeal {
+        @media only screen and (min-width: 760px){
+            height: 653px;
+            justify-content: center;
+        }
+    }
+}

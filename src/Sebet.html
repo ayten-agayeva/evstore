@@ -1,0 +1,74 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Səbət</span></a>
+			<span itemprop="position" content="2"></span>
+		</li>
+	</ol>
+	<h2 class="page_title">Səbət</h2>
+	<div class="basket">
+		<table>
+			<thead>
+				<tr>
+					<th>Məhsulun şəkli</th>
+					<th>Məhsulun adı</th>
+					<th>Qiymət</th>
+					<th>Say</th>
+					<th>Məbləğ</th>
+					<th>Sil</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><a href="mehsul.html"><img class="product_img" src="images/hex_yellow_3.png" /></a></td>
+					<td><a href="mehsul.html">Modern Stul - Sarı</a></td>
+					<td class="price">59.90</td>
+					<td>
+						<div class="number-spinner">
+							<span class="ns-btn">
+								<a data-dir="dwn" class="dwn"><span class="icon-minus"></span></a>
+							</span>
+							<input type="text" class="pl-ns-value" value="1" maxlength=2>
+							<span class="ns-btn">
+								<a data-dir="up" class="up"><span class="icon-plus"></span></a>
+							</span>
+						</div>
+					</td>
+					<td class="price">x 239.60</td>
+					<td><a href="" title="" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+				</tr>
+				<tr>
+					<td><a href="mehsul.html"><img class="product_img" src="images/product.svg" /></a></td>
+					<td><a href="mehsul.html">Rəngli Stul - Yaşıl</a></td>
+					<td class="price">59.90</td>
+					<td>
+						<div class="number-spinner">
+							<span class="ns-btn">
+								<a data-dir="dwn" class="dwn"><span class="icon-minus"></span></a>
+							</span>
+							<input type="text" class="pl-ns-value" value="1" maxlength=2>
+							<span class="ns-btn">
+								<a data-dir="up" class="up"><span class="icon-plus"></span></a>
+							</span>
+						</div>
+					</td>
+					<td class="price">x 239.60</td>
+					<td><a href="" title="" class="delete"><i class="fa fa-trash-o" aria-hidden="true"></i></a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="table_bottom">
+		<span>Cəm qiymət: <span class="total_price">479.20</span></span>
+		<a href="sifarish_et.html" class="order_btn">Sifariş et</a>
+	</div>
+	<a href="mehsullar.html" class="back_link">Məhsullara qayıt</a>
+</div>
+
+{% endblock %}

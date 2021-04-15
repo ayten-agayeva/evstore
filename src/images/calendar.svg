@@ -1,0 +1,10 @@
+<svg id="calendar" xmlns="http://www.w3.org/2000/svg" width="11.809" height="11.847" viewBox="0 0 11.809 11.847">
+  <path id="Path_1969" data-name="Path 1969" d="M253.77,289.84h1.9v1.692h-1.9Zm0,0" transform="translate(-246.419 -281.445)" fill="#b6b9c3"/>
+  <path id="Path_1970" data-name="Path 1970" d="M168.23,211.406h1.9V213.1h-1.9Zm0,0" transform="translate(-163.357 -205.283)" fill="#b6b9c3"/>
+  <path id="Path_1971" data-name="Path 1971" d="M168.23,289.84h1.9v1.692h-1.9Zm0,0" transform="translate(-163.357 -281.445)" fill="#b6b9c3"/>
+  <path id="Path_1972" data-name="Path 1972" d="M253.77,211.406h1.9V213.1h-1.9Zm0,0" transform="translate(-246.419 -205.283)" fill="#b6b9c3"/>
+  <path id="Path_1973" data-name="Path 1973" d="M88.395,289.84h1.733v1.692H88.395Zm0,0" transform="translate(-85.834 -281.445)" fill="#b6b9c3"/>
+  <path id="Path_1974" data-name="Path 1974" d="M88.395,211.406h1.733V213.1H88.395Zm0,0" transform="translate(-85.834 -205.283)" fill="#b6b9c3"/>
+  <path id="Path_1975" data-name="Path 1975" d="M0,153.405a.87.87,0,0,0,.869.869H10.94a.87.87,0,0,0,.869-.869v-6.729H0Zm1.981-5.144a.29.29,0,0,1,.29-.29H9.539a.29.29,0,0,1,.29.29V152.8a.29.29,0,0,1-.29.29H2.271a.29.29,0,0,1-.29-.29Zm0,0" transform="translate(0 -142.428)" fill="#b6b9c3"/>
+  <path id="Path_1976" data-name="Path 1976" d="M10.94,1.11h-.575V.29a.29.29,0,0,0-.579,0v.82h-7.6V.29a.29.29,0,0,0-.579,0v.82H.869A.87.87,0,0,0,0,1.979v1.69H11.809V1.979a.87.87,0,0,0-.869-.869Zm0,0" transform="translate(0 0)" fill="#b6b9c3"/>
+</svg>

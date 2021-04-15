@@ -1,0 +1,180 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="/mebeller.html"><span itemprop="name">Mebellər</span></a>
+			<span itemprop="position" content="2"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="/masa-oturacaqlar.html"><span itemprop="name">Masa və oturacaqlar</span></a>
+			<span itemprop="position" content="3"></span>
+		</li>
+	</ol>
+	<div class="product_list_overlay">
+		<div class="page_title_wrap">
+			<h2 class="page_title">
+				Mebellər
+				<i class="fa fa-angle-right"></i><span>Masa və oturacaqlar</span>
+			</h2>
+			<div class="filter_row">
+				<a id="filter_btn" type="button">Filter<i class="fa fa-angle-down"></i></a>
+				<select>
+					<option selected="selected" class="placeholder">Sırala</option>
+					<option>Yenidən köhnəyə</option>
+					<option>Köhnədən yeniyə</option>
+					<option>Ucuzdan bahaya</option>
+					<option>Bahadan ucuza</option>
+				</select>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 col-md-3">
+				<form id="filter_form">
+				<div class="filter_block" id="filter_b">
+					<h2 class="title">Kateqoriyalar</h2>
+					<div class="ctgry">
+						<div class="form-group">
+							<input type="checkbox" id="p-1" name="bar-stullari">
+							<label for="p-1">Bar stulları</label>
+							<input type="checkbox" id="p-2" name="divan-destleri">
+							<label for="p-2">Divan dəstləri</label>
+							<input type="checkbox" id="p-3" name="dolab">
+							<label for="p-3">Dolablar</label>
+							<input type="checkbox" id="p-4" name="jurnal-masalari">
+							<label for="p-4">Jurnal masaları</label>
+							<input type="checkbox" id="p-5" name="kreslolar">
+							<label for="p-5">Kreslolar</label>
+							<input type="checkbox" id="p-6" name="masalar">
+							<label for="p-6">Masalar</label>
+							<input type="checkbox" id="p-7" name="oturacaqlar">
+							<label for="p-7">Oturacaqlar</label>
+							<input type="checkbox" id="p-8" name="puflar">
+							<label for="p-8">Puflar</label>
+							<input type="checkbox" id="p-9" name="qonaq-otağı-mebelləri">
+							<label for="p-9">Qonaq otağı mebelləri</label>
+							<input type="checkbox" id="p-11" name="taburelər">
+							<label for="p-11">Taburelər</label>
+							<input type="checkbox" id="p-12" name="jurnal-masalari">
+							<label for="p-12">Jurnal masaları</label>
+							<input type="checkbox" id="p-13" name="kreslolar">
+							<label for="p-13">Kreslolar</label>
+						</div>
+					</div>
+					<div class="price_range">
+						<h2 class="title">Qiymət aralığı <i class="manat"></i></h2>
+							<div class="input_group">
+								<input name="min" class="validate[required] price_input" type="text" placeholder="" /> - 
+								<input name="max" class="validate[required] price_input" type="text" placeholder="" />	
+							</div>
+							<div class="button_group">
+								<a class="reset" id="resetbtn">Sıfırla</a>
+								<button type="submit" class="search">Axtar</button>
+							</div>
+					</div>
+				</div>
+				</form>
+			</div>
+			<div class="col-sm-12 col-md-9">
+				<div class="row product_list">
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4">
+						<div class="item-overlay">
+							<a href="" class="item">
+								<span class="img"><img width="132" src="images/product.svg"></span>
+								<span class="title">Rəngli Stul - Yaşıl</span>
+								<span class="price">59.90</span>
+							</a>
+							<a class="shopping_cart"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+</div>
+
+{% endblock %}

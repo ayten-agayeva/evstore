@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Xəbərlər</span></a>
+			<span itemprop="position" content="2"></span>
+		</li>
+	</ol>
+</div>
+<div class="container">
+	<h2 class="page_title">Xəbərlər</h2>
+	<div class="news_list">
+		<div class="row" data-match-height=".item">
+			{% for i in 0..8 %}
+			<div class="col-md-4">
+				<a class="item" href="/xeber_etrafli.html">
+					<img src="images/news_img.png" />
+					<span class="title">Evstore-un Hədiyyə Kartlarından istifadə edə bilərsiniz.</span>
+					<span class="desc">Hədiyyə Kartları hər kəsin ürəyincə olacaq xoş sürpriz etmək üçün unikal imkandır. Bu isə xüsusi əhəmiyyət verir.</span>
+					<span class="dtl">
+						<span class="date"><img src="images/calendar.svg" />25.12.2019</span>
+					</span>
+				</a>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+	<div class="pagination">
+		<div><a class="prev"><img src="images/right-arrow7.svg" /></a></div>
+		<ul>
+			<li><a>1</a></li>
+			<li class="active"><a>2</a></li>
+			<li><a>3</a></li>
+			<li><a>4</a></li>
+			<li><a>5</a></li>
+		</ul>
+		<div><a class="next"><img src="images/right_arrow.svg" /></a></div>
+	</div>
+</div>
+{% endblock %}

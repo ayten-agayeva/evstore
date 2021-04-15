@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="sifarish_muraciet_gonderildi.html"><span itemprop="name">Sifariş et</span></a>
+			<span itemprop="position" content="2"></span>
+		</li>
+	</ol>
+	<h2 class="page_title">Sifariş et</h2>
+	<div class="form order_form success">
+		<div class="success">
+			<img src="images/accept.svg">
+			<p>Müraciətiniz göndərildi.<br>Təşəkkür edirik.</p>
+			<a href="/sifarish_et.html">BAĞLA</a>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,134 @@
+.blog_detail_page{
+	padding-bottom: 50px;
+	@media (max-width: 991px) {
+		>.row{
+			display: flex;
+			flex-direction: column;
+		}
+	}
+	.others{
+		.title{
+			font-size: 20px;
+    		font-weight: 700;
+			color: #25282A;
+			line-height: 40px;
+		}
+		a{
+			font-size: 14px;
+			color: #25282A;
+			display: block;
+			line-height: 16px;
+			padding: 16px 0;
+			border-bottom: 1px solid rgba(#AB8248,.15);
+			span{
+				font-size: 13px;
+				color: #BCBFC9;
+				line-height: 18px;
+				display: flex;
+				align-items: center;
+				text-decoration: none;
+				padding-bottom: 3px;
+				&:before{
+					content: "";
+					display: inline-flex;
+					width: 12px;
+					height: 12px;
+					background: url('../images/calendar.svg') center no-repeat;
+					margin-right: 8px;
+				}
+			}
+		}
+	}
+	.detail{
+		.title{
+			color: #25282A;
+			font-size: 26px;
+			font-weight: 700;
+			line-height: 36px;
+			@media (max-width: 991px) {
+				padding-top: 10px;
+			}
+		}
+		.date{
+			font-size: 13px;
+			color: #C7C7C7;
+			line-height: 18px;
+			border-bottom: 1px solid rgba(#AB8248,.15);
+			padding: 5px 0;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			span{
+				display: flex;
+				align-items: center;
+				&:before{
+					content: "";
+					display: inline-flex;
+					width: 12px;
+					height: 12px;
+					background: url('../images/calendar.svg') center no-repeat;
+					margin-right: 8px;
+				}
+			}
+		}
+		.text{
+			font-size: 14px;
+			font-weight: 300;
+			color: #25282A;
+			line-height: 26px;
+			padding-bottom: 20px;
+			padding-top: 15px;
+			b,strong{
+				font-weight: 400;
+			}
+			p,div{
+				padding: 10px 0;
+			}
+		}
+	}
+	.owl-carousel{
+		position: relative;
+		margin-bottom: 30px;
+		.owl-prev,.owl-next{
+			position: absolute;
+			background: #3A4A79;
+			top: 50%;
+			margin-top: -18px;
+			width: 36px;
+			height: 36px;
+			border-radius: 50%;
+			left: 10px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			color: #54514B;
+			&.disabled{
+				opacity: .5;
+			}
+			&:before{
+				content: "\f107";
+				display: inline-block;
+
+				font: normal normal normal 14px/1 FontAwesome;
+				font-size: 19px;
+				color: #fff;
+				text-rendering: auto;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+
+				-webkit-transform: rotate(90deg);
+				-ms-transform: rotate(90deg);
+				transform: rotate(90deg);
+			}
+		}
+		.owl-next{
+			left: auto;
+			right: 10px;
+			&:before{
+				-webkit-transform: rotate(-90deg);
+				-ms-transform: rotate(-90deg);
+				transform: rotate(-90deg);
+			}
+		}
+	}
+}

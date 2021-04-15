@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#FBF5E8">
+    <meta property="author" content="Marcom">
+    <title>EvStore</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.min.css?_t={{modified_time}}" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<header id="header">
+  <div class="top">
+    <div class="container">
+      <div class="top-links">
+        <a href="hediyye_kartlari.html" title="">Hədiyyə Kartları</a>
+        <a href="endirimli_mehsullar.html" title="">Endirimlər</a>
+      </div>
+      <div class="top-right">
+        <ul class="contact">
+          <li><img src="./images/email.svg" />info@evstore.az</li>
+          <li><img src="./images/placeholder.svg" />Xətai rayonu, Süleyman Əhmədov 19</li>
+          <li><img src="./images/telephone.svg" />(012) 444 44 44</li>
+        </ul>
+        <div class="social">
+          <a><i class="fa fa-facebook"></i></a>
+          <a><i class="fa fa-instagram"></i></a>
+          <a><i class="fa fa-youtube-play"></i></a>
+        </div>
+        <div class="lang">
+          <span>AZ<i class="fa fa-angle-down"></i></span>
+          <div>
+            <a>EN</a>
+            <a>RU</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="inner container">
+    <div class="inner_flex">
+      <div class="flex_left">
+				<button class="open_mobile_menu"></button>
+        <h1><a href="index.html"><img src="images/logo.svg" /></a></h1>
+        <div class="search">
+          <form action="axtar.html" method="get">
+              <select>
+                <option selected="selected" class="placeholder">Kateqoriyalar</option>
+                <option>Boşqablar</option>
+                <option>Divan dəstləri</option>
+                <option>Güzgülər</option>
+                <option>Çəngəl, qaşıq və bıçaqlar</option>
+                <option>Kreslolar</option>
+                <option>Şamlar</option>
+                <option>Jurnal masaları</option>
+              </select>
+              <input name="search" class="validate[required]" type="text" placeholder="Axtar" />
+              <button type="submit"><img src="images/magnifying-glass.svg" /></button>
+          </form>
+        </div>
+      </div>
+      <div class="flex_right">
+				<button class="open_mobile_search"></button>
+        <div class="account">
+          <span class="account_drop">Hesab<i class="fa fa-angle-down"></i></span>
+          <div class="account_menu">
+            <!-- <a>Profil məlumatları</a>
+            <a>Çıxış</a> -->
+            <div class="tabs" data-target=".account_tab">
+							<a class="active">Daxil ol</a><a>Qeydiyyat</a>
+						</div>
+						<div class="tabs_content account_tab">
+							<div class="active">
+                <div class="form">
+                  <form method="post" class="validation" action="">
+                    <div class="row">
+                      <div class="col-xs-12"><input name="email" class="validate[required,custom[email]]" type="email" placeholder="Email" /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <input required name="login[password]" class="validate[required] password" type="password" placeholder="Şifrə" />
+                        <div class="hide-show pass_visibility"><span></span></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-6">
+                        <div class="form-group">
+                          <input type="checkbox" id="save" name="yadda-saxla">
+                          <label for="save">Yadda saxla</label>
+                        </div>
+                      </div>
+                      <div class="col-xs-6 text-right">
+                        <a href="shifreni_unutmusan.html" class="forgot_password_link">Şifrəni unutmusan?</a>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <button type="submit" class="btn">Daxil ol</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <button class="btn with_facebook" type="button"><span><i class="fa fa-facebook"></i></span> Facebook ilə qeydiyyat</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+							</div>
+							<div>
+                <div class="form">
+                  <form method="post" class="validation" action="">
+                    <div class="row">
+                      <div class="col-xs-12"><input name="name" class="validate[required]" type="text" placeholder="Ad & Soyad" /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12"><input name="email" class="validate[required,custom[email]]" type="email" placeholder="Email" /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-4">
+                        <select>
+                          <option selected="selected" class="placeholder">051</option>
+                          <option>050</option>
+                          <option>055</option>
+                          <option>070</option>
+                          <option>077</option>
+                        </select>
+                      </div>
+                      <div class="col-xs-8"><input name="phone" class="validate[required]" type="text" placeholder="Nömrə" data-mask="phone" /></div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="check_wrap flex_mobile">
+                          <span class="check_title">Cins</span>
+                          <div class="radio_group">
+                            <label class="radio"><input name="t" type="radio" value="1"><span>Kişi</span></label>
+                            <label class="radio"><input name="t" type="radio" value="2"><span>Qadın</span></label>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <input required name="login[password]" class="validate[required] password" type="password" placeholder="İstifadəçi şifrəsi" />
+                        <div class="hide-show pass_visibility"><span></span></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <input required name="login[password]" class="validate[required] password" type="password" placeholder="Şifrənin təkrarı" />
+                        <div class="hide-show pass_visibility"><span></span></div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <button type="submit" class="btn">Təsdiqlə</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <button class="btn with_facebook" type="button"><span><i class="fa fa-facebook"></i></span> Facebook ilə qeydiyyat</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+							</div>
+            </div>
+          </div>
+        </div>
+        <a href="sebet.html" class="shopping_cart"><span>99</span></a>
+      </div>
+    </div>
+  </div>
+  <div class="navbar">
+    <div class="container">
+      <nav role="navigation">
+        <ul class="main-nav">
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Bağ<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Mətbəx<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>İşıqlandırma və alətlər<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Usta  Alətləri<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Mebellər<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Məişət texnikası<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Hamam aksessuarları<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="top-level-link">
+            <a class="mega-menu"><span>Keramika<i class="fa fa-angle-down"></i></span></a>
+            <div class="sub-menu-block">
+              <div class="row">
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Mətbəx mebelləri</a></li>
+                    <li><a>Plastik qablar</a></li>
+                    <li><a>Yemək dəstləri</a></li>
+                  </ul>           
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Servizlər</a></li>
+                    <li><a>Tavalar</a></li>
+                    <li><a>Şüşə qablar</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Qazanlar</a></li>
+                    <li><a>Termoslar</a></li>
+                    <li><a>Mətbəx aksesuarları</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-3">
+                  <ul class="sub-menu-lists">
+                    <li><a>Fincanlar</a></li>
+                    <li><a>Mətbəx Tekstili</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul> 
+      </nav>
+    </div>
+  </div>
+</header>
+{% block content %}{% endblock %}
+<a id="button" class="back_to_top"><i class="fa fa-angle-up"></i></a>
+<footer id="footer">
+  <div class="container">
+    <div class="f_nav">
+      <div class="right">
+        <a href="haqqimizda.html">Haqqımızda</a>
+        <a href="xeberler.html">Xəbərlər</a>
+        <a href="elaqe.html">Əlaqə</a>
+      </div>
+      <div class="payment">
+        <a href=""><img src="./images/mastercard.svg" /></a>
+        <a href=""><img src="./images/visa.svg" /></a>
+      </div>
+    </div>
+    <div class="bottom">
+      <div>Bütün hüquqlar qorunur. © 2019</div>
+      <div>Bu bir <a class="marcom" href="https://marcom.az/" target="_blank">Marcom</a> məhsuludur</div>
+    </div>
+  </div>
+</footer>
+<div class="mobile_menu mobile_popup">
+	<div class="header">
+		<button class="back"><i class="fa fa-angle-left"></i> Geri</button>
+		<button class="close"></button>
+	</div>
+	<div class="lang">
+		<a class="active">AZ</a>
+		<a>EN</a>
+		<a>RU</a>
+	</div>
+	<div class="container"></div>
+</div>
+<div class="mobile_search mobile_popup">
+	<div class="header">
+		<button class="close"></button>
+	</div>
+	<div class="container"></div>
+</div>
+<div class="mobile_user mobile_popup">
+	<div class="header">
+		<button class="close"></button>
+	</div>
+	<div class="container"></div>
+</div>
+<script src="js/vendor.min.js?_t={{modified_time}}"></script>
+<script src="js/lang/jquery.validationEngine-en.js"></script>
+<script src="js/script.min.js?_t={{modified_time}}"></script>
+</body>
+</html>

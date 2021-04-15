@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Şifrəni unutmusan?</span></a>
+			<span itemprop="position" content="2"></span>
+		</li>
+	</ol>
+</div>
+<div class="container">
+    <h2 class="page_title">Şifrəni unutmusan?</h2>
+    <div class="appeal_wrap">
+        <div class="appeal">
+            <img src="images/accept.svg" />
+            <span>Müraciətiniz göndərildi. Təşəkkür edirik.</span>
+            <a href="index.html" class="close">BAĞLA</a>
+        </div>
+        <a href="index.html" class="back_link">Ana səhifəyə qayıt</a>
+    </div>
+</div>
+
+{% endblock %}

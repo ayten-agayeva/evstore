@@ -1,0 +1,100 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Mebellər</span></a>
+			<span itemprop="position" content="2"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Yazı Masaları və Oturacaqları</span></a>
+			<span itemprop="position" content="3"></span>
+		</li>
+	</ol>
+</div>
+<div class="container product_page">
+	<div class="page_title_wrap">
+		<h2 class="page_title">
+			Mebellər
+			<i class="fa fa-angle-right"></i><span>Masa və oturacaqlar</span>
+		</h2>
+	</div>
+	<div class="row">
+		<div class="col-12 col-md-6">
+			<div class="slider_big_img"><img src="images/hex_yellow_3.png"/></div>
+			<div class="owl-carousel">
+				<a class="item"><img src="images/hex_yellow_3.png"/></a>
+				<a class="item"><img src="images/sample/1.jpg"/></a>
+				<a class="item"><img src="images/sample/2.jpg"/></a>
+				<a class="item"><img src="images/sample/2.jpg"/></a>
+			</div>
+		</div>
+		<div class="col-12 col-md-6 product_detail">
+			<h2 class="title">Modern Stul - Sarı</h2>
+			<div class="title_desc">
+				<span class="product_code">Məhsul Kodu: 0000111122223333</span>
+				<a class="facebook_btn"><i class="fa fa-facebook"></i>share</a>
+			</div>
+			<div class="color">
+				<h2>Rəng:</h2>
+				<div class="form-group">
+					<input name="color" type="radio" id="green">
+					<label for="green" class="green"></label>
+					<input name="color" type="radio" id="blue">
+					<label for="blue" class="blue"></label>
+					<input name="color" type="radio" id="yellow">
+					<label for="yellow" class="yellow"></label>
+					<input name="color" type="radio" id="red">
+					<label for="red" class="red"></label>
+				</div>
+			</div>
+			<span class="delivery"><img src="images/delivery-truck.svg" />Bakı daxili pulsuz çatdırılma</span>
+			<div class="stock"><img src="images/check-rounded.svg" />Hal-hazırda mövcüddür</div>
+			<div class="stock stock_out"><img src="images/cancel.svg" />Stokda yoxdur</div>
+			<div class="bottom_block">
+				<div class="price_wrap">
+					<span class="price old_price">79.90</span>
+					<span class="price">59.90</span>
+				</div>
+				<div class="add_basket">
+					<div class="number-spinner">
+						<span class="ns-btn">
+							<a data-dir="dwn" class="dwn"><span class="icon-minus"></span></a>
+						</span>
+						<input type="text" class="pl-ns-value" max="5" min="1" value="1"/>
+						<span class="ns-btn">
+							<a data-dir="up" class="up"><span class="icon-plus"></span></a>
+						</span>
+					</div>
+					<a class="basket_btn"><img src="images/shopping-cart-empty-side-view.svg" />Səbətə at</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="product_list_overlay">
+		<h2 class="page_title">
+            Oxşar məhsullar
+            <a href="">Daha çox</a>
+        </h2>
+		<div class="row product_list">
+			{% for i in 0..3 %}
+			<div class="col-sm-6 col-md-3">
+				<div class="item-overlay">
+					<a href="" class="item">
+						<span class="img"><img src="images/product.svg"></span>
+						<span class="title">Rəngli Stul - Yaşıl</span>
+						<span class="price">59.90</span>
+					</a>
+					<a class="shopping_cart"></a>
+				</div>
+			</div>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+
+{% endblock %}

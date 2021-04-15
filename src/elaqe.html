@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Əlaqə</span></a>
+			<span itemprop="position" content="3"></span>
+		</li>
+	</ol>
+</div>
+<div class="container contact_page">
+	<h2 class="page_title">Əlaqə</h2>
+	<div class="row">
+		<div class="col-md-4 mo-1">
+			<div class="form" id="edit_form">
+				<h2>Müraciət formu</h2>
+				<form method="post" class="validation" action="">
+					<div class="row">
+						<div class="col-xs-12"><input name="name" class="validate[required]" type="text" placeholder="Ad & Soyad" /></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12"><input name="email" class="validate[required,custom[email]]" type="email" placeholder="Email" /></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12"><input name="phone" class="validate[required]" type="text" placeholder="Nömrə" /></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="check_wrap flex_mobile">
+								<span class="check_title">Status</span>
+								<div class="radio_group">
+									<label class="radio"><input name="t" type="radio" value="1"><span>İrad</span></label>
+									<label class="radio"><input name="t" type="radio" value="2"><span>Təklif</span></label>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12"><textarea class="validate[required]" placeholder="Mesajınız"></textarea></div>
+					</div>
+					<div class="row">
+						<div class="col-xs-12 text-right">
+							<button type="submit">Göndər</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="col-md-8 mo-0">
+			<div class="contact_detail">
+				<h2>Əlaqə məlumatları</h2>
+				<div class="detail_row">
+					<span><b>Ünvan 1:</b> Nizami rayonu, Süleyman Əhmədov 19,
+						28 Mall-un yanı, Bakı</span>
+					<span><b>Nömrə:</b> (012) 444 22 33</span>
+				</div>
+				<div class="detail_row">
+					<span><b>Ünvan 1:</b> Nizami rayonu, Süleyman Əhmədov 19,
+						28 Mall-un yanı, Bakı</span>
+					<span><b>Nömrə:</b> (012) 444 22 33</span>
+				</div>
+				<div class="detail_row">
+					<span><b>Ünvan 1:</b> Nizami rayonu, Süleyman Əhmədov 19,
+						28 Mall-un yanı, Bakı</span>
+					<span><b>Nömrə:</b> (012) 444 22 33</span>
+				</div>
+				<div class="detail_row">
+					<span><b>Email:</b> info@evstore.az</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% endblock %}

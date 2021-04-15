@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="/404.html"><span itemprop="name">Səhifə tapılmadı</span></a>
+			<span itemprop="position" content="3"></span>
+		</li>
+	</ol>
+</div>
+<div class="container">
+    <div class="not_found">
+        <img  src="images/404.svg" />
+        <div>
+            <div class="title">Səhifə tapılmadı</div>
+            <a href="index.html" class="back_homepage">Ana səhifəyə qayıt</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

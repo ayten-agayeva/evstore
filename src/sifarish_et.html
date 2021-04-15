@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+	<ol id="breadcrumb" itemscope="" itemtype="http://schema.org/BreadcrumbList">
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+			<span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+		</li>
+		<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+			<a itemprop="item" href=""><span itemprop="name">Sifariş et</span></a>
+			<span itemprop="position" content="2"></span>
+		</li>
+	</ol>
+	<h2 class="page_title">Sifariş et</h2>
+	<div class="form order_form">
+		<h2>Sifarişi rəsmiləşdir</h2>
+		<form method="post" class="validation" action="sifarish_muraciet_gonderildi.html">
+			<div class="row">
+				<div class="col-md-4"><input name="name" class="validate[required]" type="text" placeholder="Ad & Soyad" /></div>
+				<div class="col-md-4"><input name="phone" class="validate[required]" type="text" placeholder="Nömrə" /></div>
+				<div class="col-md-4">
+					<div class="check_wrap">
+						<span class="check_title">Çatdırılma</span>
+						<div class="form-group">
+							<input type="checkbox" id="delivery">
+							<label for="delivery">Olacaq</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4"><input name="delivery_address" class="validate[required]" type="text" placeholder="Çatdırılma ünvanı" disabled /></div>
+				<div class="col-md-8">
+					<div class="check_wrap flex_mobile">
+						<span class="check_title">Ödəmə</span>
+						<div class="radio_group">
+							<label class="radio"><input name="t" class="validate[required]" type="radio" value="1"><span>Onlayn ödəmə</span></label>
+							<label class="radio"><input name="t" class="validate[required]" type="radio" value="2"><span>Ünvanda nağd ödəniş</span></label>
+							<label class="radio"><input name="t" class="validate[required]" type="radio" value="2"><span>Plastik kartla ödəniş</span></label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12"><textarea class="validate[required]" placeholder="Əlavə məlumat"></textarea></div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 text-right">
+					<button type="submit">Sifarişi təsdiqlə</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+{% endblock %}

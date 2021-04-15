@@ -1,0 +1,82 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="container">
+    <ol id="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="index.html" class="home"><span itemprop="name"></span></a>
+            <span itemprop="position" content="1"><i class="fa fa-angle-right"></i></span>
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href=""><span itemprop="name">Xəbərlər</span></a>
+            <span itemprop="position" content="2"><i class="fa fa-angle-right"></i></span>
+        </li>
+        <li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href=""><span itemprop="name">Xəbər</span></a>
+            <span itemprop="position" content="2"></span>
+        </li>
+    </ol>
+</div>
+<div class="blog_detail_page container">
+    <div class="row">
+        <div class="col-md-3 others mo-1">
+            <div></div>
+            <h3 class="title">Digər Xəbərlər</h3>
+					{% for i in 0..3 %}
+            <a href="/xeber_etrafli.html"><span>25.12.2019</span>Evstore-un Hədiyyə
+                Kartlarından istifadə edə bilərsiniz</a>
+					{% endfor %}
+				</div>
+        <div class="col-md-9 detail mo-0">
+            <h2 class="title">Evstore-un Hədiyyə Kartlarından istifadə edə bilərsiniz</h2>
+            <div class="date">
+                <span>25.12.2019</span>
+                <a class="facebook_btn"><i class="fa fa-facebook"></i>share</a>
+            </div>
+            <div class="text">
+                <p>Qeyri-adi tərzli yeni məhsullarımız sizin bağ və interyerinizi əvəzolunmaz edəcək. Yeni kolleksiyaya
+                    güldanlar, şamlar, saxlama qabları, boşqablar, fincanlar, xalçalar, suvernirlər, dolablar, divanlar,
+                    bağ mebeli və daha onlarla çeşidli məhsullar daxildir. Web səhifəmizin bölmələrini vərəqləyərək
+                    məhsullarımızla daha yaxından tanış ola bilərsiniz. Qeyri-adi tərzli yeni məhsullarımız sizin bağ və
+                    interyerinizi əvəzolunmaz edəcək. Yeni kolleksiyaya güldanlar, şamlar, saxlama qabları, boşqablar,
+                    fincanlar, xalçalar, suvernirlər, dolablar, divanlar, bağ mebeli və daha onlarla çeşidli məhsullar
+                    daxildir. Web səhifəmizin bölmələrini vərəqləyərək məhsullarımızla daha yaxından tanış ola
+                    bilərsiniz.</p>
+
+                <p>Qeyri-adi tərzli yeni məhsullarımız sizin bağ və interyerinizi əvəzolunmaz edəcək. Yeni kolleksiyaya
+                    güldanlar, şamlar, saxlama qabları, boşqablar, fincanlar, xalçalar, suvernirlər, dolablar, divanlar,
+                    bağ mebeli və daha onlarla çeşidli məhsullar daxildir. Web səhifəmizin bölmələrini vərəqləyərək
+                    məhsullarımızla daha yaxından tanış ola bilərsiniz. Qeyri-adi tərzli yeni məhsullarımız sizin bağ və
+                    interyerinizi əvəzolunmaz edəcək. Yeni kolleksiyaya güldanlar, şamlar, saxlama qabları, boşqablar,
+                    fincanlar, xalçalar, suvernirlər, dolablar, divanlar, bağ mebeli və daha onlarla çeşidli məhsullar
+                    daxildir. Web səhifəmizin bölmələrini vərəqləyərək məhsullarımızla daha yaxından tanış ola
+                    bilərsiniz.
+                </p>
+
+                <p>Qeyri-adi tərzli yeni məhsullarımız sizin bağ və interyerinizi əvəzolunmaz edəcək. Yeni kolleksiyaya
+                    güldanlar, şamlar, saxlama qabları, boşqablar, fincanlar, xalçalar, suvernirlər, dolablar, divanlar,
+                    bağ mebeli və daha onlarla çeşidli məhsullar daxildir. Web səhifəmizin bölmələrini vərəqləyərək
+                    məhsullarımızla daha yaxından tanış ola bilərsiniz. Qeyri-adi tərzli yeni məhsullarımız sizin bağ və
+                    interyerinizi əvəzolunmaz edəcək. Yeni kolleksiyaya güldanlar, şamlar, saxlama qabları, boşqablar,
+                    fincanlar, xalçalar, suvernirlər, dolablar, divanlar, bağ mebeli və daha onlarla çeşidli məhsullar
+                    daxildir. Web səhifəmizin bölmələrini vərəqləyərək məhsullarımızla daha yaxından tanış ola
+                    bilərsiniz.</p>
+            </div>
+            <div class="owl-carousel">
+                <a data-fancybox="gallery" href="images/img_news_carousel.png"><img
+                        src="images/img_news_carousel.png"></a>
+                <a data-fancybox="gallery" href="images/img_news_carousel.png"><img
+                        src="images/img_news_carousel.png"></a>
+                <a data-fancybox="gallery" href="images/img_news_carousel.png"><img
+                        src="images/img_news_carousel.png"></a>
+                <a data-fancybox="gallery" href="images/img_news_carousel.png"><img
+                        src="images/img_news_carousel.png"></a>
+                <a data-fancybox="gallery" href="images/img_news_carousel.png"><img
+                        src="images/img_news_carousel.png"></a>
+                <a data-fancybox="gallery" href="images/img_news_carousel.png"><img
+                        src="images/img_news_carousel.png"></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
